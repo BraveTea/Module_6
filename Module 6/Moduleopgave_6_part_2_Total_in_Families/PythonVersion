@@ -1,0 +1,21 @@
+import random
+girlCounter = 0
+boyCounter = 0
+numberOfFamilies = 100
+
+
+def family():
+    global girlCounter
+    global boyCounter
+    sex = 0
+    while sex == 0:
+        sex = random.randint(0, 1)
+        girlCounter += 1
+    boyCounter += 1
+
+
+for i in range(numberOfFamilies):
+    family()
+
+print(boyCounter)
+print(girlCounter)
