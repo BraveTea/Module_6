@@ -13,17 +13,9 @@ boolean isLargerThanOne(int num) {
   return num > 1;
 }
 
-/*
-boolean isDivisibleOnlyByOne(int num){
+boolean isDivisibleOnlyBySelf(int num){
   for (int i = 2; i < num/2+1; i++){
-    return num % i == 0;
-  }
-}
-*/
-
-boolean isDivisibleOnlyBySelf(int num) {
-  for (int i = 2; i < num/2+1; i++) {
-    if (num % i == 0) {
+    if (num % i == 0){
       return false;
     }
   }
